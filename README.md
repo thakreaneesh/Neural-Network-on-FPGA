@@ -4,7 +4,7 @@
 This repository contains a fully hardware **multi-layer perceptron (MLP)** implemented in Verilog with **no vendor IP cores**, making it portable across FPGA platforms. The design was built and tested on a **Xilinx Arty A7** (Artix-7) development board. By running inference directly on the FPGA fabric, the network achieves low-latency, on-device processing—ideal for edge AI/IoT scenarios where bandwidth, power, and data privacy are critical.
 
 ## Architecture
-The network is a feed-forward MLP with **4 fully-connected layers**:
+The network is a feed-forward  MLP (multilayer perceptron) with **4 fully-connected layers**:
 - **Layer 1**: 30 neurons  
 - **Layer 2**: 30 neurons  
 - **Layer 3**: 10 neurons  
