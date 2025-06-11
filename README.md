@@ -30,6 +30,9 @@ Data flows through each layer in sequence. The top-level module (`zynet.v`) orch
 * **`Weight_Memory.v`**  
   Read-only memory storing all pretrained weights and biases. Layers fetch their parameter sets from this centralized block.
 
+* **.mif Files**  
+  Memory Initialization Files for weights and biases—loadable into FPGA block RAM to preconfigure all layer parameters before synthesis or at runtime.
+
 * **`maxFinder.v`**  
   Scans the 10 outputs from the last layer and outputs the index with the maximum value (the predicted class label).
 
@@ -41,6 +44,7 @@ Data flows through each layer in sequence. The top-level module (`zynet.v`) orch
 
 * **`include.v`**  
   Shared parameters and macros (e.g. data widths, neuron counts, fixed-point scaling).
+
 
 ## Hardware Platform
 
